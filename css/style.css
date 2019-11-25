@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    box-sizing: border-box;
+
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+html, body {
+    position: relative;
+    height: 100%;
+  }
+  body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+    
+
+  }
+
+  img{
+      display: block;
+  }
+  ul,li{
+      list-style: none;
+  }
+  a{
+      text-decoration: none;
+  }
+
+
+
+  .index-lun{
+      height: 100%;
+  }
+
+
+.header{
+    /* border: 1px solid blue; */
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+    background: rgba(255, 255, 255, .3);
+    display: flex;
+    align-items: center;
+    padding: 0 2%;;
+    
+}
+
+.logo{
+    margin-right: 6%;
+    
+}
+.logo img{
+    height: 42px;
+    
+    
+}
+
+.nav{
+    /* border: 1px solid red; */
+    display: flex;
+    /* margin: 0 auto; */
+
+}
+.nav li{
+    
+    margin: 40px;
+    
+    
+
+}
+.nav li a{
+    font-size: 18px;
+    color: #fff;
+    transition: .3s;
+
+}
+
+.nav li a:hover{
+    color: #99e164;
+    /* font-weight: bold; */
+    transition: .3s;
+
+}
+
+.sign{
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    background: #22ac38;
+    /* line-height: 40px; */
+    padding: 11px 22px;
+    margin-left: auto;
+
+}
+
+
+.menu{
+    width: 36px;
+    margin-left: 40px;
+}
+
+
+
+.index-container {
+    width: 100%;
+    height: 100%;
+
+}
+
+.index-slide {
+    height: 100%;
+    background-position: center !important;
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+
+
+
+
+.index-slide>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+
+
+}
+
+
+
+.swiper-slide-active .index-content{
+    opacity: 1;
+    transition: 1.4s;
+    position: relative;
+    top: 0;
+    
+}
+
+.index-content{
+
+    /* border: 1px solid red; */
+    text-align: center;
+    line-height: 2;
+    opacity: 0;
+    transition: 1.4s;
+    position: relative;
+    top: 80px;
+
+
+
+}
+
+
+.index-content-left{
+    margin-right: auto;
+    margin-left: 6.2%;
+    text-align: left;
+}
+
+.index-content-right{
+    margin-left: auto;
+    margin-right: 0;
+    margin-right: 6.2%;
+    text-align: right;
+}
+
+
+
+
+.shadow{
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 2px #000;
+    text-shadow: 2px 3px 0px #ddd,
+    0px 2px 0px #000,
+    4px 2px 0px #000,
+    2px 0px 0px #000,
+    2px 4px 0px #000,
+    0px 4px 0px #000,
+    4px 4px 0px #000;
+}
+
+.shadow-white{
+    letter-spacing: 2px;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 2px #fff;
+    text-shadow: 3px 4px 0px #444,
+    1px 3px 0px #fff,
+    5px 3px 0px #fff,
+    3px 1px 0px #fff,
+    3px 5px 0px #fff,
+    1px 5px 0px #fff,
+    5px 5px 0px #fff;
+}
+
+.index-content h1{
+    font-size: 50px;
+    font-weight: 800;
+    /* color: #fff; */
+    /* color: transparent; */
+    
+    /*文字的填充色*/
+    /* text-shadow: 2px 2px 1px #000; */
+
+    /* text-shadow: 1px 1px 0px lightgray,2px 2px 0px #000; */
+}
+
+.h1-line::after{
+    content: "";
+    display: block;
+    width: 270px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 24px 0 30px;
+
+}
+
+
+.index-content-right .h1-line::after{
+    
+    margin-left: auto;
+
+}
+
+.index-content p{
+    font-size: 30px;
+    line-height: 1.6;
+    color: #fff;
+
+
+}
+
+
+
+.learn-more{
+    display: inline-block;
+    font-size: 20px;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: .8px #000;
+    font-weight: bold;
+    padding: 2px 10px;
+    background-color: rgba(0,0,0,.6);
+    border-radius: 5px;
+    margin-top: 40px;
+
+
+}
+.learn-more img{
+    display: inline-block;
+    margin-left: 14px;
+    height: 16px;
+    position: relative;
+    top: 1px;
+}
+
+
+.ad-content{
+    width: 100%;
+    /* border: 1px solid yellow; */
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 2%;
+    box-sizing: border-box;
+
+
+
+}
+
+.ad-content-left{
+    justify-content: flex-start;
+}
+
+.ad-content a{
+    display: block;
+    margin-left: 20px;
+}
+
+.ad-content a img{
+    height: 50px;
+}
+
+
+
+
+
