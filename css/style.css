@@ -299,6 +299,14 @@ html, body {
 }
 
 
-
+.down-img{
+    width: 32px;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%,0);
+    
+}
+.down-img img{width: 100%;}
 
 
