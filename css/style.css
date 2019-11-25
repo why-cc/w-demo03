@@ -84,8 +84,8 @@ html, body {
 
 }
 
-.nav li a:hover{
-    color: #99e164;
+.nav-on a,.nav li a:hover{
+    color: #99e164 !important;
     /* font-weight: bold; */
     transition: .3s;
 
